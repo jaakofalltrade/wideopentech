@@ -6,7 +6,7 @@
 body {
     width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: 2000px;
     padding-bottom: 50px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -79,46 +79,6 @@ body {
 .navbar-options a:hover {
     transition: 0.4s;
     border-bottom: 4px solid #bed537;
-}
-
-
-@media only screen and (max-device-width: 1147px) {
-    .navbar-options {
-        top: 10px;
-        width: 600px;
-    }
-
-    .navbar-container {
-        width: 90%;
-    }
-
-    .navbar-container .img2 img {
-        float: left;
-        height: auto;
-        width: 50px;
-        display: block;
-    }
-
-    .navbar-container .img1 img {
-        float: left;
-        height: auto;
-        width: 50px;
-        display: none;
-    }
-}
-
-@media only screen and (max-device-width: 768px) {
-    .navbar-options a {
-        display: none;
-    }
-
-    .navbar-options i {
-        display: block;
-    }
-
-    .navbar-options {
-        justify-content: flex-end;
-    }
 }
 
 .main-banner {
@@ -223,4 +183,196 @@ body {
     width: 100%;
     height: auto;
     min-height: 48px;
+}
+
+.container-intro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 375px;
+}
+
+.container-inner-intro {
+    padding-bottom: 10px;
+    text-align: center;
+    width: 85%;
+    height: auto;
+    min-height: 375px;
+}
+
+.container-inner-intro p {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0px;
+    color: #6A787C;
+}
+
+.container-inner-intro h4 {
+    color: #6A787C;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 36px;
+    font-family: 'Oswald';
+}
+
+.container-inner-intro h4 em {
+    font-weight: bold;
+    color: #bdd436;
+    font-style: normal;
+}
+
+.container-inner-intro h4:before{
+    content: " ";
+    display: block;
+    background: url(images/sprite_home.png);
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    background-position: -22px -113px;
+    margin-bottom: 20px;
+}
+
+.container-learn {
+    top: -10px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #97A2A7;
+    position: relative;
+    width: 100%;
+    height: 540px;
+    background-color: #ffffff;
+}
+
+.container-inner-learn {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-about {
+    color: #8f8787;
+    line-height: 1.428571429;
+    flex: 1;
+    height: 450px;
+}
+
+.learn-about p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    min-height: 300px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.pos1::before {
+    content: "";
+    display: block;
+    width: 131px;
+    height: 160px;
+    background: url(images/sprite_home.png) no-repeat;
+    margin: 0 auto 27px auto;
+    background-position: -311px -100px;
+}
+
+.pos2::before {
+    content: "";
+    display: block;
+    height: 160px;
+    background: url(images/sprite_home.png) no-repeat;
+    margin: 0 auto 27px auto;
+    background-position: -119px -100px;
+    width: 94px;
+}
+
+.pos3::before {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 160px;
+    background: url(images/sprite_home.png) no-repeat;
+    margin: 0 auto 27px auto;
+    background-position: -227px -91px;
+}
+
+@media only screen and (max-device-width: 1147px) {
+    .navbar-options {
+        top: 10px;
+        width: 600px;
+    }
+
+    .navbar-container {
+        width: 90%;
+    }
+
+    .navbar-container .img2 img {
+        float: left;
+        height: auto;
+        width: 50px;
+        display: block;
+    }
+
+    .navbar-container .img1 img {
+        float: left;
+        height: auto;
+        width: 50px;
+        display: none;
+    }
+    
+    .container-inner-learn {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .navbar-options a {
+        display: none;
+    }
+
+    .navbar-options i {
+        display: block;
+    }
+
+    .navbar-options {
+        justify-content: flex-end;
+    }
+
+    .container-inner-intro {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .container-learn {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .container-inner-learn {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .learn-about {
+        border: none;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        width: 100%;
+    }
 }
