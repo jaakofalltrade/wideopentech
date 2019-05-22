@@ -310,6 +310,71 @@ body {
     background-position: -227px -91px;
 }
 
+.container-help {
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    background-color: red;
+}
+
+.container-inner-help {
+    width: 73%;
+    height: auto;
+    min-height: 800px;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+}
+
+.container-inner-help h2 {
+    width: 100%;
+    background-color: #C8E23A;
+    text-align: center;
+    font-family: 'Oswald';
+    line-height: 1.1;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    color: #40666d;
+}
+
+.container-inner-help h2 em {
+    font-weight: bold;
+    color: #bdd436;
+    font-style: normal;
+}
+
+.container-inner-help h6 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 1.1;
+    color: #40666d;
+    font-size: 22px;
+    margin: 5px 0 70px;
+    text-align: center;
+    width: 100%;
+    background-color: aqua;
+}
+
+.container-flex-help {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    background-color: rgb(25, 143, 108);
+}
+
+.container-grid-clmn {
+    background-color: chocolate;
+    position: relative;
+    height: auto;
+    min-height: 400px;
+}
+
 @media only screen and (max-device-width: 1147px) {
     .navbar-options {
         top: 10px;
