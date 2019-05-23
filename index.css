@@ -440,4 +440,8 @@ body {
         padding-top: 100px;
         width: 100%;
     }
+
+    .main-banner-text h1 small {
+        text-align: center;
+    }
 }
