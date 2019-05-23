@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 2000px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.428571429;
@@ -469,7 +469,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 120px;
-    background-color: cyan;
+    background-color: #fff;
 }
 
 .cont-header-last h2 {
@@ -478,6 +478,7 @@ body {
     font-size: 42px;
     font-weight: 300;
     font-family: 'Oswald';
+    color: #6a787c;
 }
 
 @media only screen and (max-device-width: 1147px) {
@@ -509,7 +510,7 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 1000px) {
     .navbar-options a {
         display: none;
     }
@@ -520,6 +521,7 @@ body {
 
     .navbar-options {
         justify-content: flex-end;
+        width: 50px;
     }
 
     .container-inner-intro {
@@ -549,6 +551,7 @@ body {
 
     .main-banner-text h1 small {
         text-align: center;
+        margin-left: 0;
     }
 
     .main-banner-btn button {
@@ -567,5 +570,17 @@ body {
     .container-flex-help {
         grid-template-columns: auto;
         grid-gap: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 670px) {
+    .main-banner-text h1 .main {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (max-device-width: 375px) {
+    .main-banner-text h1 .main {
+        font-size: 60px;
     }
 }
