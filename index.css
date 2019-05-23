@@ -481,6 +481,13 @@ body {
     color: #6a787c;
 }
 
+.container-photo {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background-color: #40666d;
+}
+
 @media only screen and (max-device-width: 1147px) {
     .navbar-options {
         top: 10px;
