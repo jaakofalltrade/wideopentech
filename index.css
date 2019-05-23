@@ -149,6 +149,28 @@ body {
     font-weight: 500
 }
 
+.main-banner-text h1 .sub::before {
+    content: " ";
+    display: block;
+    background: #fff;
+    height: 9px;
+    width: 20%;
+    position: absolute;
+    left: -20%;
+    top: 5px;
+}
+
+.main-banner-text h1 .sub::after {
+    content: " ";
+    display: block;
+    background: #fff;
+    height: 9px;
+    width: 20%;
+    position: absolute;
+    right: -20%;
+    top: 5px;
+}
+
 .main-banner-btn {
     position: relative;
     bottom: 20px;
@@ -257,7 +279,7 @@ body {
 .container-inner-learn {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 65%;
     height: 540px;
     margin-left: auto;
     margin-right: auto;
@@ -317,20 +339,17 @@ body {
     width: 100%;
     height: auto;
     min-height: 800px;
-    background-color: red;
 }
 
 .container-inner-help {
     width: 73%;
     height: auto;
     min-height: 800px;
-    background-color: cornflowerblue;
     margin: 0 auto;
 }
 
 .container-inner-help h2 {
     width: 100%;
-    background-color: #C8E23A;
     text-align: center;
     font-family: 'Oswald';
     line-height: 1.1;
@@ -347,7 +366,7 @@ body {
 }
 
 .container-inner-help h6 {
-    font-family: 'Oswald';
+    font-family: 'Open Sans';
     font-weight: 500;
     line-height: 1.1;
     color: #40666d;
@@ -355,24 +374,29 @@ body {
     margin: 5px 0 70px;
     text-align: center;
     width: 100%;
-    background-color: aqua;
 }
 
 .container-flex-help {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 25px;
-    width: 100%;
+    width: 90%;
     height: auto;
-    min-height: 400px;
-    background-color: rgb(25, 143, 108);
+    min-height: 450px;
 }
 
 .container-grid-clmn {
-    background-color: chocolate;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
     position: relative;
     height: auto;
     min-height: 400px;
+}
+
+.cont-help-item {
+    background-color: #ffffff;
 }
 
 @media only screen and (max-device-width: 1147px) {
@@ -443,5 +467,14 @@ body {
 
     .main-banner-text h1 small {
         text-align: center;
+    }
+
+    .container-inner-help {
+        width: 95%;
+    }
+
+    .container-flex-help {
+        grid-template-columns: auto;
+        grid-gap: 10px;
     }
 }
