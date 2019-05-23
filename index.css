@@ -302,6 +302,11 @@ body {
     width: 100%;
 }
 
+.learn-about p a {
+    color: #bdd436;
+    text-decoration: none;
+}
+
 .pos1::before {
     content: "";
     display: block;
@@ -338,13 +343,14 @@ body {
     top: 30px;
     width: 100%;
     height: auto;
-    min-height: 800px;
+    min-height: 650px;
+    padding-bottom: 30px;
 }
 
 .container-inner-help {
-    width: 73%;
+    width: 1000px;
     height: auto;
-    min-height: 800px;
+    min-height: 650px;
     margin: 0 auto;
 }
 
@@ -384,19 +390,94 @@ body {
     width: 90%;
     height: auto;
     min-height: 450px;
+    transition: all 500ms;
 }
 
 .container-grid-clmn {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
     position: relative;
     height: auto;
     min-height: 400px;
+    transition: all 500ms;
 }
 
 .cont-help-item {
     background-color: #ffffff;
+}
+
+.cont-help-item p {
+    background: #fff;
+    margin: 0 0 15px 0;
+    padding: 30px 1em;
+    font-size: 24px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+    color: #40666d;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.cont-help-item p small {
+    font-size: 16px;
+    color: #858585;
+    display: block;
+    margin-top: 5px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+.container-help-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+
+.container-help-btn button {
+    background: #bdd436 !important;
+    border: 2px solid #bdd436 !important;
+    color: #FFF !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    padding: 11px 36px !important;
+    border-radius: 25px !important;
+}
+
+.container-last {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: auto;
+    min-height: 900px;
+    background-color: coral;
+}
+
+.cont-header-last {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 120px;
+    background-color: cyan;
+}
+
+.cont-header-last h2 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    font-family: 'Oswald';
 }
 
 @media only screen and (max-device-width: 1147px) {
@@ -447,6 +528,7 @@ body {
     }
 
     .container-learn {
+        top: 40px;
         height: auto;
         min-height: 400px;
     }
@@ -469,12 +551,21 @@ body {
         text-align: center;
     }
 
+    .main-banner-btn button {
+        width: 95%;
+    }
+
+    .container-help {
+        top: 60px;
+        position: relative;
+    }
+
     .container-inner-help {
         width: 95%;
     }
 
     .container-flex-help {
         grid-template-columns: auto;
-        grid-gap: 10px;
+        grid-gap: 15px;
     }
 }
