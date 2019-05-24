@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    transition: all 0.5s ease;
 }
 
 body {
     width: 100%;
     height: auto;
     min-height: 2000px;
-    padding-bottom: 150px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.428571429;
@@ -500,6 +500,33 @@ body {
     height: auto;
 }
 
+.container-first-footer {
+    width: 100%;
+    height: auto;
+    min-height: 30px;
+    background-color: #40666d;
+}
+
+.cont-footer-center {
+    display: flex;
+    align-items: center;
+    max-width: 45%;
+    height: auto;
+    min-height: 320px;
+    margin: 0 auto;
+}
+
+.cont-footer-center h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
 @media only screen and (max-device-width: 1147px) {
     .navbar-options {
         top: 10px;
@@ -611,5 +638,53 @@ body {
 @media only screen and (max-device-width: 375px) {
     .main-banner-text h1 .main {
         font-size: 60px;
+    }
+}
+
+@media only screen and (max-device-width: 370px) {
+    .main-banner-text h1 .main {
+        font-size: 40px;
+    }
+
+    .navbar-options {
+        justify-content: flex-end;
+        width: 10px;
+    }
+
+    .navbar-container .img2 img {
+        width: 40px;
+    }
+}
+
+@media only screen and (max-device-width: 240px) {
+    .main-banner-text h1 .main {
+        font-size: 40px;
+    }
+
+    .navbar-options {
+        justify-content: flex-end;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-options i {
+        float: left;
+        font-size: 30px;
+        margin-right: auto;
+        color: #F0F0F0;
+    }
+
+    .navbar-container .img2 img {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 200px) {
+    .main-banner-text h1 .main {
+        font-size: 30px;
+    }
+
+    .container-flex-help {
+        width: 100%;
     }
 }
